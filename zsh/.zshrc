@@ -103,6 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vs="code ."
 alias nvim="~/app/nvim-linux64/bin/nvim"
+# open terminal in fullscreen
 alias f="wmctrl -r :ACTIVE: -b add,fullscreen"
 
 export NVM_DIR="$HOME/.nvm"
