@@ -22,9 +22,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # stow dotfiles
 stow zsh
-stow nvim
 stow rio
 stow prettier
+stow zed
 
 # install nvm
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh)"
