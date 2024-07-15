@@ -1,9 +1,9 @@
 performance = "High"
-theme = "dracula"
+theme = "rose-pine-moon"
 padding-x = 0
 
 [fonts]
-size = 19
+size = 16
 
 [fonts.regular]
 family = "JetBrains Mono"
@@ -23,7 +23,23 @@ weight = 300
 [fonts.bold-italic]
 family = "JetBrains Mono"
 style = "italic"
-weight = 700
+weight = 600
+
+# Window configuration
+#
+# • width - define the intial window width.
+#   Default: 600
+#
+# • height - define the inital window height.
+#   Default: 400
+#
+# • mode - define how the window will be created
+#     - "Windowed" (default) is based on width and height
+#     - "Maximized" window is created with maximized
+#     - "Fullscreen" window is created with fullscreen
+#
+[window]
+mode = "Fullscreen"
 
 # Navigation
 #
@@ -34,11 +50,15 @@ weight = 700
 # "macos-hide-window-buttons" - (MacOS only) Hide window buttons
 #
 [navigation]
-mode = "BottomTab"
-clickable = false
+mode = "CollapsedTab"
 use-current-path = true
 color-automation = [
-  { program = "nvim", color = "#FFFF00" }
+  { program = "docker compose", color = "#000099" }
+]
+
+[bindings]
+keys = [
+    { key = "up", with = "super", action = "ToggleFullscreen" }
 ]
 
 disable-renderer-when-unfocused = false
