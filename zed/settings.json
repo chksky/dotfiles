@@ -1,0 +1,47 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "theme": {
+    "mode": "system",
+    "light": "Fleet Dark Purple",
+    "dark": "Fleet Dark"
+  },
+  "completion_documentation_secondary_query_debounce": 200,
+  "show_whitespaces": "boundary",
+  "indent_guides": {
+    "active_line_width": 2,
+    "coloring": "indent_aware",
+    "background_coloring": "disabled"
+  },
+  "project_panel": {
+    "default_width": 260,
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "chat_panel": {
+    "button": false
+  },
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": true
+  },
+  "tabs": {
+    "git_status": true
+  },
+  "formatter": "prettier",
+  "tab_size": 2,
+  "journal": {
+    "hour_format": "hour24"
+  }
+}
