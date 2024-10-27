@@ -120,3 +120,10 @@ case ":$PATH:" in
 esac
 # pnpm end
 export PATH=$HOME/.local/bin:$PATH
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
+
+[ -f "/home/lun/.ghcup/env" ] && . "/home/lun/.ghcup/env" # ghcup-env
+. "/home/lun/.deno/env"
