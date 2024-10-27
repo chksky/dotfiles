@@ -21,6 +21,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/ma
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # stow dotfiles
+# how this works
+# stow creates symplinks from current directory to home with keeping directories structure
+# for example `stow rio` will create symplics for all files in directory ./rio with same structrure
+# rio/.config/rio/config.toml => ~./config/rio/config.toml
+# zsh/.zshrc => ~/.zshrc
 stow zsh
 stow rio
 stow prettier
