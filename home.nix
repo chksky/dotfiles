@@ -71,13 +71,13 @@
     '';
 
     shellAliases = {
-      hms = "home-manager switch";
+      hms = "home-manager -f ~/.dotfiles/home.nix switch";
       f = "wmctrl -r :ACTIVE: -b add,fullscreen";
       uf = "wmctrl -r :ACTIVE: -b remove,fullscreen";
     };
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "docker"  ];
+      plugins = [ "git" "docker" ];
       theme = "robbyrussell";
     };
 
@@ -109,11 +109,6 @@
   };
 
   home.file = {
-    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-    # # symlink to the Nix store copy.
-    # ".screenrc".source = dotfiles/screenrc;
-
     ".config/zed".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.dotfiles/zed";
     ".config/ghostty".source = config.lib.file.mkOutOfStoreSymlink  "${config.home.homeDirectory}/.dotfiles/ghostty";
 
@@ -143,7 +138,6 @@
   home.sessionVariables = {
     EDITOR = "nano";
   };
-  # TODO: add editorconfig
 
   dconf.settings = {
     "org/gnome/desktop/input-sources" = {
