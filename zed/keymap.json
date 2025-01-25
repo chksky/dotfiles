@@ -1,0 +1,33 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+      // "f f": "file_finder::Toggle"
+      // "о": "vim::Down",
+      // "л": "vim::Up",
+      // "д": "vim::Right",
+      // "р": "vim::Left",
+      // "ц": "vim::NextWordEnd",
+      // "и": "vim::PreviousWordStart",
+
+      "s": "vim::Sneak",
+      "і": "vim::Sneak",
+      "S": "vim::SneakBackward",
+      "І": "vim::SneakBackward"
+    }
+  }
+]

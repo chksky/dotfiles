@@ -7,10 +7,13 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "features": {
+    "inline_completion_provider": "copilot"
+  },
   "assistant": {
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-20240620"
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
     },
     "version": "2"
   },
@@ -25,6 +28,8 @@
     "light": "Ayu Light",
     "dark": "Ayu Dark"
   },
+  // upd unused variables color
+  "unnecessary_code_fade": 0.7,
   "completion_documentation_secondary_query_debounce": 100,
   "show_whitespaces": "selection",
   "indent_guides": {
@@ -33,14 +38,12 @@
     "coloring": "fixed",
     "background_coloring": "disabled"
   },
+  "ensure_final_newline_on_save": false,
   "project_panel": {
     "default_width": 260,
     "dock": "left"
   },
   "collaboration_panel": {
-    "button": false
-  },
-  "chat_panel": {
     "button": false
   },
   "tab_bar": {
@@ -54,5 +57,13 @@
   "tab_size": 2,
   "journal": {
     "hour_format": "hour24"
+  },
+  "prettier": {
+    "allowed": true,
+    "plugins": [],
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true
   }
 }
