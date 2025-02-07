@@ -68,6 +68,9 @@
 
       # ghcup-env
       [ -f "/home/chksky/.ghcup/env" ] && . "/home/chksky/.ghcup/env"
+
+      # rust toolchain
+      . "$HOME/.cargo/env"
     '';
 
     shellAliases = {
