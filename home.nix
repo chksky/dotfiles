@@ -58,6 +58,12 @@
       enable = true;
       strategy = [ "history" ];
     };
+    dirHashes = {
+      dl = "$HOME/Downloads";
+      ms = "$HOME/misto";
+      pr = "$HOME/pr";
+      dot = "$HOME/.dotfiles";
+    };
     initExtra = ''
       # fnm
       FNM_PATH="/home/chksky/.local/share/fnm"
