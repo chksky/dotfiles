@@ -14,20 +14,6 @@
   },
   {
     "context": "Editor",
-    "bindings": {
-      // "j k": ["workspace::SendKeystrokes", "escape"]
-      // "f f": "file_finder::Toggle"
-      // "о": "vim::Down",
-      // "л": "vim::Up",
-      // "д": "vim::Right",
-      // "р": "vim::Left",
-      // "ц": "vim::NextWordEnd",
-      // "и": "vim::PreviousWordStart",
-
-      "s": "vim::Sneak",
-      "і": "vim::Sneak",
-      "S": "vim::SneakBackward",
-      "І": "vim::SneakBackward"
-    }
+    "bindings": {}
   }
 ]
