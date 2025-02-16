@@ -38,7 +38,10 @@
     pkgs.shared-mime-info
   ];
 
-  programs.helix.enable = true;
+  programs = {
+    helix.enable = true;
+    ripgrep.enable = true;
+  };
 
   home.file.".config/obsidian/.keep".text = "";
 
@@ -159,7 +162,7 @@
   #  /etc/profiles/per-user/chksky/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    EDITOR = "nano";
+    EDITOR = "vim";
   };
 
   dconf.settings = {
