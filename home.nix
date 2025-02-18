@@ -162,7 +162,7 @@
   #  /etc/profiles/per-user/chksky/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    EDITOR = "vim";
+    EDITOR = "hx";
   };
 
   dconf.settings = {
