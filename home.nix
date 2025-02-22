@@ -38,11 +38,6 @@
     pkgs.shared-mime-info
   ];
 
-  programs = {
-    helix.enable = true;
-    ripgrep.enable = true;
-  };
-
   home.file.".config/obsidian/.keep".text = "";
 
   xdg.desktopEntries.obsidian = {
@@ -52,6 +47,33 @@
     type = "Application";
     categories = [ "Office" "TextEditor" ];
     mimeType = [ "x-scheme-handler/obsidian" ];
+  };
+
+  programs = {
+    ripgrep.enable = true;
+    helix = {
+      enable = true;
+      defaultEditor = true;
+      settings = {
+        theme = "ayu_dark";
+      };
+    };
+    starship = {
+      enable = true;
+      enableFishIntegration = true;
+    };
+    atuin = {
+      enable = true;
+      settings = {
+        enter_accept = false;
+      };
+    };
+    git = {
+      enable = true;
+      userName = "Dima Ochkivskyi";
+      userEmail = "github@chksky.com";
+      difftastic.enable = true;
+    };
   };
 
   programs.zsh = {
@@ -64,7 +86,6 @@
     dirHashes = {
       dl = "$HOME/Downloads";
       ms = "$HOME/misto";
-      pr = "$HOME/pr";
       dot = "$HOME/.dotfiles";
     };
     initExtra = ''
@@ -115,25 +136,6 @@
     ];
   };
 
-  programs.starship = {
-    enable = true;
-    enableFishIntegration = true;
-  };
-
-  programs.atuin = {
-    enable = true;
-    settings = {
-      enter_accept = false;
-    };
-  };
-
-  programs.git = {
-    enable = true;
-    userName = "Dima Ochkivskyi";
-    userEmail = "github@chksky.com";
-    difftastic.enable = true;
-  };
-
   home.file = {
     ".config/zed".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.dotfiles/zed";
     ".config/ghostty".source = config.lib.file.mkOutOfStoreSymlink  "${config.home.homeDirectory}/.dotfiles/ghostty";
@@ -160,11 +162,6 @@
   # or
   #
   #  /etc/profiles/per-user/chksky/etc/profile.d/hm-session-vars.sh
-  #
-  home.sessionVariables = {
-    EDITOR = "hx";
-  };
-
   dconf.settings = {
     "org/gnome/desktop/input-sources" = {
       xkb-options = ["ctrl:nocaps"];
