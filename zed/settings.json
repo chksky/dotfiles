@@ -7,9 +7,19 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": "Zed (Default)",
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "zed"
+  },
+  "edit_predictions": {
+    "disabled_globs": ["**/*.json"],
+    // When to show edit predictions previews in buffer.
+    // This setting takes two possible values:
+    // 1. Display inline when there are no language server completions available.
+    //     "mode": "eager_preview"
+    // 2. Display inline when holding modifier key (alt by default).
+    //     "mode": "auto"
+    "mode": "eager_preview"
   },
   "assistant": {
     "default_model": {
@@ -52,7 +62,8 @@
     "show_nav_history_buttons": true
   },
   "tabs": {
-    "git_status": true
+    "git_status": true,
+    "show_diagnostics": "all"
   },
   "formatter": "prettier",
   "tab_size": 2,
