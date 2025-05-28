@@ -21,10 +21,10 @@
     //     "mode": "subtle"
     "mode": "subtle"
   },
-  "assistant": {
+  "agent": {
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4o"
+      "provider": "zed.dev",
+      "model": "claude-3-7-sonnet-latest"
     },
     "version": "2"
   },
@@ -39,6 +39,9 @@
     "light": "Ayu Light",
     "dark": "Ayu Dark"
   },
+  "minimap": { "show": "auto" },
+  // buggy
+  "hide_mouse": "never",
   // upd unused variables color
   "unnecessary_code_fade": 0.7,
   "completion_documentation_secondary_query_debounce": 100,
