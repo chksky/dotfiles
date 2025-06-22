@@ -24,7 +24,7 @@
   "agent": {
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-latest"
+      "model": "claude-sonnet-4"
     },
     "version": "2"
   },
@@ -39,7 +39,7 @@
     "light": "Ayu Light",
     "dark": "Ayu Dark"
   },
-  "minimap": { "show": "auto" },
+  "minimap": { "show": "auto", "current_line_highlight": "all" },
   // buggy
   "hide_mouse": "never",
   // upd unused variables color
@@ -52,6 +52,8 @@
     "coloring": "fixed",
     "background_coloring": "disabled"
   },
+  "current_line_highlight": "all",
+  "cursor_shape": "bar",
   "ensure_final_newline_on_save": false,
   "project_panel": {
     "default_width": 260,
@@ -62,7 +64,8 @@
   },
   "tab_bar": {
     "show": true,
-    "show_nav_history_buttons": true
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
   },
   "tabs": {
     "git_status": true,
