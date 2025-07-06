@@ -42,6 +42,7 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-theme = dark:catppuccin-frappe,light:dawnfox
+theme = dark:ayu,light:ayu_light
 window-decoration = false
 gtk-wide-tabs = false
+keybind = shift+enter=text:\n
