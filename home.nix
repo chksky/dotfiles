@@ -26,7 +26,7 @@
     # JSON processing
     pkgs.jq
 
-    # for `sensors` command
+    # `sensors` command
     pkgs.lm_sensors
 
     pkgs.wmctrl
@@ -82,11 +82,6 @@
     autosuggestion = {
       enable = true;
       strategy = [ "history" ];
-    };
-    dirHashes = {
-      dl = "$HOME/Downloads";
-      ms = "$HOME/misto";
-      dot = "$HOME/.dotfiles";
     };
     initExtra = ''
       # fnm
