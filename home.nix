@@ -110,6 +110,7 @@
       hms = "home-manager -f ~/.dotfiles/home.nix switch";
       f = "wmctrl -r :ACTIVE: -b add,fullscreen";
       uf = "wmctrl -r :ACTIVE: -b remove,fullscreen";
+      pn = "pnpm";
     };
     oh-my-zsh = {
       enable = true;
