@@ -49,6 +49,10 @@
     mimeType = [ "x-scheme-handler/obsidian" ];
   };
 
+  services = {
+    copyq.enable = true;
+  };
+
   programs = {
     ripgrep.enable = true;
     helix = {
@@ -111,6 +115,7 @@
       f = "wmctrl -r :ACTIVE: -b add,fullscreen";
       uf = "wmctrl -r :ACTIVE: -b remove,fullscreen";
       pn = "pnpm";
+      copy = "copyq copy";
     };
     oh-my-zsh = {
       enable = true;
