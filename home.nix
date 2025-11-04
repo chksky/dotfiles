@@ -115,7 +115,9 @@
       f = "wmctrl -r :ACTIVE: -b add,fullscreen";
       uf = "wmctrl -r :ACTIVE: -b remove,fullscreen";
       pn = "pnpm";
+      pnx = "pnpx";
       copy = "copyq copy";
+      mkcd = "mkdir -p $1 && cd $1";
     };
     oh-my-zsh = {
       enable = true;
