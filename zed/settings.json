@@ -22,9 +22,11 @@
     "mode": "subtle"
   },
   "agent": {
+    "always_allow_tool_actions": true,
+    "default_profile": "write",
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4"
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-5-thinking-latest"
     }
   },
   "autosave": "on_focus_change",
@@ -39,6 +41,7 @@
     "light": "Ayu Light",
     "dark": "Ayu Dark"
   },
+  "colorize_brackets": true,
   "minimap": { "show": "auto", "current_line_highlight": "all" },
   "git": { "blame": { "show_avatar": true } },
   // buggy
@@ -71,6 +74,7 @@
     "git_status": true,
     "show_diagnostics": "all"
   },
+  "format_on_save": "on",
   "formatter": "prettier",
   "tab_size": 2,
   "journal": {
