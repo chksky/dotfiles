@@ -9,7 +9,7 @@
 {
   "icon_theme": "Zed (Default)",
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "zed",
   },
   "edit_predictions": {
     "disabled_globs": ["**/*.json"],
@@ -19,27 +19,31 @@
     //     "mode": "eager"
     // 2. Display predictions inline only when holding a modifier key (alt by default).
     //     "mode": "subtle"
-    "mode": "subtle"
+    "mode": "subtle",
   },
   "agent": {
     "always_allow_tool_actions": true,
     "default_profile": "write",
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-sonnet-4-5-thinking-latest"
-    }
+      "model": "claude-sonnet-4-5-thinking-latest",
+    },
   },
   "autosave": "on_focus_change",
   "vim_mode": true,
+  "which_key": {
+    "enabled": true,
+    "delay_ms": 100,
+  },
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "buffer_line_height": {
-    "custom": 1.45
+    "custom": 1.45,
   },
   "theme": {
     "mode": "system",
     "light": "Ayu Light",
-    "dark": "Ayu Dark"
+    "dark": "Ayu Dark",
   },
   "colorize_brackets": true,
   "minimap": { "show": "auto", "current_line_highlight": "all" },
@@ -53,32 +57,32 @@
     "enabled": false,
     "active_line_width": 2,
     "coloring": "fixed",
-    "background_coloring": "disabled"
+    "background_coloring": "disabled",
   },
   "current_line_highlight": "all",
   "cursor_shape": "bar",
   "ensure_final_newline_on_save": false,
   "project_panel": {
     "default_width": 260,
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "button": false
+    "button": false,
   },
   "tab_bar": {
     "show": true,
     "show_nav_history_buttons": false,
-    "show_tab_bar_buttons": false
+    "show_tab_bar_buttons": false,
   },
   "tabs": {
     "git_status": true,
-    "show_diagnostics": "all"
+    "show_diagnostics": "all",
   },
   "format_on_save": "on",
   "formatter": "prettier",
   "tab_size": 2,
   "journal": {
-    "hour_format": "hour24"
+    "hour_format": "hour24",
   },
   "prettier": {
     "allowed": true,
@@ -86,6 +90,6 @@
     "trailingComma": "es5",
     "tabWidth": 2,
     "semi": true,
-    "singleQuote": true
-  }
+    "singleQuote": true,
+  },
 }
