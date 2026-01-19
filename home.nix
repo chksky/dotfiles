@@ -3,7 +3,7 @@
 {
   home.username = "chksky";
   home.homeDirectory = "/home/chksky";
-  home.stateVersion = "24.05";
+  home.stateVersion = "25.11";
 
   nixpkgs.config = {
     allowUnfree = true;
@@ -85,7 +85,6 @@
     enableCompletion = true;
     autosuggestion = {
       enable = true;
-      strategy = [ "history" ];
     };
     initExtra = ''
       # fnm
