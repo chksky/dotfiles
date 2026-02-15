@@ -8,10 +8,8 @@
 // from the command palette or from `Zed` application menu.
 {
   "icon_theme": "Zed (Default)",
-  "features": {
-    "edit_prediction_provider": "zed",
-  },
   "edit_predictions": {
+    "provider": "zed",
     "disabled_globs": ["**/*.json"],
     // When to show edit predictions previews in buffer.
     // This setting takes two possible values:
@@ -91,5 +89,10 @@
     "tabWidth": 2,
     "semi": true,
     "singleQuote": true,
+  },
+  "languages": {
+    "YAML": {
+      "formatter": "language_server",
+    },
   },
 }
