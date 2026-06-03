@@ -9,11 +9,18 @@
   {
     "context": "vim_mode == normal",
     "bindings": {
-      "f f": ["file_finder::Toggle", {}]
-    }
+      "f f": ["file_finder::Toggle", {}],
+    },
   },
   {
-    "context": "Editor",
-    "bindings": {}
+    "bindings": {
+      "ctrl-alt-b": "workspace::ToggleRightDock",
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "ctrl-b": "vim::PageUp"
+    }
   }
 ]
