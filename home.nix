@@ -74,7 +74,7 @@
     };
     git = {
       enable = true;
-      user = {
+      settings.user = {
         email = "github@chksky.com";
         name = "Dima Ochkivskyi";
       };
@@ -88,7 +88,7 @@
     autosuggestion = {
       enable = true;
     };
-    initExtra = ''
+    initContent = ''
       # fnm
       FNM_PATH="/home/chksky/.local/share/fnm"
       if [ -d "$FNM_PATH" ]; then
