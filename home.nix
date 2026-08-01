@@ -78,8 +78,8 @@
         email = "github@chksky.com";
         name = "Dima Ochkivskyi";
       };
-      difftastic.enable = true;
     };
+    difftastic.enable = true;
   };
 
   programs.zsh = {
