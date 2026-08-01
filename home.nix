@@ -74,8 +74,10 @@
     };
     git = {
       enable = true;
-      userName = "Dima Ochkivskyi";
-      userEmail = "github@chksky.com";
+      user = {
+        email = "github@chksky.com";
+        name = "Dima Ochkivskyi";
+      };
       difftastic.enable = true;
     };
   };
