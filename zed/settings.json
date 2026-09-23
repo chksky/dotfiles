@@ -16,16 +16,18 @@
   "agent_servers": {
     "codex-acp": {
       "default_config_options": {
-        "reasoning_effort": "high"
+        "mode": "agent-full-access",
+        "reasoning_effort": "xhigh"
       },
       "type": "registry"
     },
     "claude-acp": {
       "default_config_options": {
-        "model": "opus",
+        "model": "default",
         "mode": "auto",
       },
       "type": "registry",
+      "env": { "CLAUDE_CODE_EXECUTABLE": "/home/chksky/.local/bin/claude" }
     },
   },
   "buffer_font_family": ".ZedMono",
@@ -116,7 +118,7 @@
     "git_status": true,
     "show_diagnostics": "all",
   },
-  "format_on_save": "on",
+  "format_on_save": "off",
   "formatter": "language_server",
   "tab_size": 2,
   "journal": {
